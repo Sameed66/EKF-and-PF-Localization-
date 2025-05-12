@@ -1,4 +1,6 @@
-# filters
+# EKF (Extended Kalman Filter) and PF(Particle Filter) for Localization
+
+The objective of the practical work is to understand how the Extended Kalman Filter (EKF) and the Particle Filter (PF) work for localizing a mobile robot and to develop an implementation of each
 
 The starter code is written in Python and depends on NumPy and Matplotlib.
 This README gives a brief overview of each file.
