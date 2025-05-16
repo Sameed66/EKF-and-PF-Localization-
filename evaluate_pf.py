@@ -94,3 +94,15 @@ plt.legend()
 
 plt.tight_layout()
 plt.show()
+
+
+plt.figure(figsize=(7, 5))
+for n in particle_counts:
+    plt.plot(r_values, anees_d[n], label=f'{n} particles')
+plt.xlabel('r (noise scaling factor)')
+plt.ylabel('ANEES')
+plt.xscale('log')
+plt.title('Effect of Particle Count on ANEES (4d)')
+plt.legend()
+plt.tight_layout()
+plt.show()

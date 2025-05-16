@@ -6,12 +6,12 @@ The starter code is written in Python and depends on NumPy and Matplotlib.
 This README gives a brief overview of each file.
 
 - `localization.py` -- This is your main entry point for running experiments.
-- `soccer_field.py` -- This implements the dynamics and observation functions, as well as the noise models for both. Add your Jacobian implementations here!
+- `soccer_field.py` -- This implements the dynamics and observation functions, as well as the noise models for both. Jacobian implementations are done here!
 - `utils.py` -- This contains assorted plotting functions, as well as a useful
   function for normalizing angles.
 - `policies.py` -- This contains a simple policy, which you can safely ignore.
-- `ekf.py` -- Add your extended Kalman filter implementation here!
-- `pf.py` -- Add your particle filter implementation here!
+- `ekf.py` -- Extended Kalman filter implementation here!
+- `pf.py` -- Particle filter implementation here!
 
 ## Command-Line Interface
 
@@ -34,3 +34,11 @@ flags available to you, run
 ```bash
 $ python localization.py -h
 ```
+
+EKF and PF Plots can be visualized for after running these two files: 
+
+```bash
+$ python evaluate_ekf.py 
+$ python evaluate_pf.py 
+```
+
