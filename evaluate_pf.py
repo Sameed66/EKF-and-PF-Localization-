@@ -70,7 +70,7 @@ plt.plot(r_values, errors_b, 'o-', label='4(b): Data + Filter noise')
 plt.plot(r_values, errors_c, 's--', label='4(c): Filter noise only')
 plt.xlabel('r (noise scaling factor)')
 plt.ylabel('Mean Position Error')
-plt.xscale('log')
+#plt.xscale('log')
 plt.title('Mean Position Error (4b & 4c)')
 plt.legend()
 
@@ -92,5 +92,17 @@ plt.xscale('log')
 plt.title('Effect of Particle Count (4d)')
 plt.legend()
 
+plt.tight_layout()
+plt.show()
+
+
+plt.figure(figsize=(7, 5))
+for n in particle_counts:
+    plt.plot(r_values, anees_d[n], label=f'{n} particles')
+plt.xlabel('r (noise scaling factor)')
+plt.ylabel('ANEES')
+plt.xscale('log')
+plt.title('Effect of Particle Count on ANEES (4d)')
+plt.legend()
 plt.tight_layout()
 plt.show()
